@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counseling Services - Mental Health Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            background-image: url('https://thumbs.dreamstime.com/b/group-therapy-people-collective-psychotherapy-counseling-mental-health-support-addiction-psychologist-help-session-206923236.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #2c3e50;
+        }
+
+        /* Vertical Navbar Styling */
+        nav {
+            width: 250px;
+            background-color: rgba(44, 62, 80, 0.9);
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #ecf0f1;
+            display: block;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content Styling */
+        main {
+            margin-left: 270px;
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+
+        /* Counseling Container Styling */
+        .counseling-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(44, 62, 80, 0.9);
+            color: #ecf0f1;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 250px;
+        }
+
+        footer p, footer a {
+            margin: 0 15px;
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Vertical Navigation Bar -->
+    <nav>
+        <ul>
+             <li><a href="home.html">Home</a></li>
+         <li><a href="login.html">Login/signup</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="counseling.html">Counseling</a></li>
+            <li><a href="support.html">Support Groups</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section (Counseling Services) -->
+    <main>
+        <div class="counseling-container">
+            <h1>Counseling Services</h1>
+            <p>
+                We understand that mental health is a crucial aspect of overall well-being. Our counseling services are designed to provide support to individuals facing various challenges, including anxiety, depression, stress, and relationship issues.
+            </p>
+            <p>
+                Our qualified professionals offer a range of services, including individual counseling, group therapy, and workshops focused on mental health awareness. We aim to create a safe and supportive environment for our clients to explore their thoughts and feelings.
+            </p>
+            <p>
+                If you are interested in our counseling services, please reach out to us through our <a href="contact.html">Contact Us</a> page. We are here to help you on your journey to better mental health.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Mental Health Resources. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

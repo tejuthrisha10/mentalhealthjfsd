@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            background-image: url('https://t4.ftcdn.net/jpg/04/58/20/09/360_F_458200985_t0HdGcD6BfzturnfxNqGbm00cKBCmram.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #2c3e50;
+        }
+
+        /* Vertical Navbar Styling */
+        nav {
+            width: 250px;
+            background-color: #2c3e50;
+            position: fixed;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 20px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #ecf0f1;
+            display: block;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        /* Main Content Styling */
+        main {
+            margin-left: 270px;
+            padding: 40px;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 60px);
+        }
+
+        /* Resources Container Styling */
+        .resources-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2980b9;
+            margin-bottom: 20px;
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer Section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 250px;
+        }
+
+        footer p, footer a {
+            margin: 0 15px;
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vertical Navigation Bar -->
+    <nav>
+        <ul>
+              <li><a href="home.html">Home</a></li>
+         <li><a href="login.html">Login/signup</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="counseling.html">Counseling</a></li>
+            <li><a href="support.html">Support Groups</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section (Resources) -->
+    <main>
+        <div class="resources-container">
+            <h1>Mental Health Resources</h1>
+            <p>
+                Below is a list of valuable resources to help you with various aspects of mental health. These resources range from articles and self-help tools to hotlines and professional support services.
+            </p>
+            <ul>
+                <li><a href="https://www.nimh.nih.gov/" target="_blank">National Institute of Mental Health (NIMH)</a></li>
+                <li><a href="https://www.mentalhealth.gov/" target="_blank">MentalHealth.gov</a></li>
+                <li><a href="https://www.samhsa.gov/" target="_blank">Substance Abuse and Mental Health Services Administration (SAMHSA)</a></li>
+                <li><a href="https://www.betterhelp.com/" target="_blank">BetterHelp - Online Therapy</a></li>
+                <li><a href="https://www.crisistextline.org/" target="_blank">Crisis Text Line</a></li>
+                <li><a href="https://www.headspace.com/" target="_blank">Headspace - Meditation and Mindfulness</a></li>
+                <li><a href="https://www.7cups.com/" target="_blank">7 Cups - Free Emotional Support</a></li>
+            </ul>
+            <p>If you or someone you know is in immediate danger, please contact local emergency services or reach out to the nearest mental health professional.</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Mental Health Resources. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+        <p><a href="terms.html">Terms of Service</a></p>
+    </footer>
+
+</body>
+</html>

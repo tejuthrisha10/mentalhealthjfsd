@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Adding background image and animations */
+        body {
+            background-image: url('https://media.istockphoto.com/id/1156178759/vector/human-head-and-brain-creation-and-idea-concept.jpg?s=612x612&w=0&k=20&c=dDRkcnBadVH6oNVvULTIeqE-nEtwN2ADHZNI4LJ3hKQ=');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Text sections */
+        section, header, footer {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        /* Adding hover effect on sections */
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        /* Navigation bar style */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0056b3;
+        }
+
+        /* Input and form styling */
+        input[type="text"], input[type="datetime-local"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"] {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #003d80;
+        }
+
+        /* Keyframe for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#resources">Manage Resources</a></li>
+                <li><a href="#counseling">Manage Counseling</a></li>
+                <li><a href="#support">Manage Support Groups</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Manage Resources Section -->
+    <section id="resources">
+        <h2>Manage Mental Health Resources</h2>
+        <form action="updateResources" method="post">
+            <label for="resourceTitle">Resource Title:</label>
+            <input type="text" id="resourceTitle" name="resourceTitle" placeholder="Enter resource title"><br><br>
+            <label for="resourceContent">Resource Content:</label>
+            <textarea id="resourceContent" name="resourceContent" rows="4" placeholder="Describe the resource"></textarea><br><br>
+            <input type="submit" value="Update Resource">
+        </form>
+    </section>
+
+    <!-- Manage Counseling Section -->
+    <section id="counseling">
+        <h2>Manage Counseling Sessions</h2>
+        <form action="scheduleCounseling" method="post">
+            <label for="counselor">Select Counselor:</label>
+            <select id="counselor" name="counselor">
+                <option value="counselor1">Counselor 1</option>
+                <option value="counselor2">Counselor 2</option>
+            </select><br><br>
+            <label for="sessionTime">Session Time:</label>
+            <input type="datetime-local" id="sessionTime" name="sessionTime"><br><br>
+            <input type="submit" value="Schedule Session">
+        </form>
+    </section>
+
+    <!-- Manage Support Groups Section -->
+    <section id="support">
+        <h2>Manage Support Groups</h2>
+        <form action="updateSupportGroups" method="post">
+            <label for="groupName">Group Name:</label>
+            <input type="text" id="groupName" name="groupName" placeholder="Enter group name"><br><br>
+            <label for="groupDetails">Group Details:</label>
+            <textarea id="groupDetails" name="groupDetails" rows="4" placeholder="Describe the group"></textarea><br><br>
+            <input type="submit" value="Update Group">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Admin Dashboard</p>
+    </footer>
+</body>
+</html>
